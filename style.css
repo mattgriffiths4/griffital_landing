@@ -1,0 +1,97 @@
+/* main setup */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2B3252;
+  --secondary-color: #42A2CE;
+  --tertiary-color: #E6E7E8;
+  --alternate-color: #D4EDFC;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  letter-spacing: 0.2px;
+}
+
+/* container */
+.container {
+  background-color: var(--white-color);
+  box-shadow: 0 0 15rem 1rem var(--tertiary-color);
+  padding: 5rem 4rem;
+  width: 38rem;
+  text-align: center;
+}
+
+.container__logo {
+  width: 14rem;
+  height: auto;
+}
+
+/* main content */
+.container__main {
+  margin: 2rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: -0.2rem;
+  
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+p {
+  margin-top: 1.2rem;
+  font-weight: 300;
+}
+
+/* buttons */
+
+
+
+
+
+
+/* socials */
+
+
+
+
+
+/* Wave emoji */
+.container__btn--wave {
+  display: inline-block;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+}
+/* keyframes */
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
